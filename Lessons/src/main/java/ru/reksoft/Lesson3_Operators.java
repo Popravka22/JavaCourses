@@ -60,8 +60,7 @@ public class Lesson3_Operators {
             i = i - 1000;
         }
 
-        boolean a = (i < 0) ? false : true;
-        return a;
+        return i>=0;
 
     }
 
