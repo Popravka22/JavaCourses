@@ -36,7 +36,8 @@ class Lesson2 {
         String surname = String.valueOf(names[0].charAt(0));
         String name = String.valueOf(names[1].charAt(0));
         String middleName = String.valueOf(names[2].charAt(0));
-        return surname.toUpperCase() + "." + name.toUpperCase() + "." + middleName.toUpperCase() + ".";
+        String initials = surname + "." + name + "." + middleName + ".";
+        return initials.toUpperCase();
     }
 
 

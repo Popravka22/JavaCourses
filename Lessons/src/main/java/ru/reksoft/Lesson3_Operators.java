@@ -52,7 +52,7 @@ public class Lesson3_Operators {
      */
     public static boolean task2(int i) {
 
-        i = --i;
+        --i;
         if ((i > 100) || (i < 30)) {
             i = i + 1000;
         }
@@ -60,11 +60,8 @@ public class Lesson3_Operators {
             i = i - 1000;
         }
 
-        if (i < 0) {
-            return false;
-        }
-
-        else return true;
+        boolean a = (i < 0) ? false : true;
+        return a;
 
     }
 
