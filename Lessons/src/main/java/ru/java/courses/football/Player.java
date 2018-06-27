@@ -3,13 +3,13 @@ package ru.java.courses.football;
 public class Player extends Person {
     private int goalCount;
     private boolean isActive = false;
-    private PlayerType playerType;
+    private PlayerRole playerRole;
 
 
-    public Player(String name, PlayerType playerType, int goalCount) {
+    public Player(String name, PlayerRole playerRole) {
         this.name = name;
-        this.playerType = playerType;
-        this.goalCount = goalCount;
+        this.playerRole = playerRole;
+        this.goalCount = 0;
     }
 
     @Override
@@ -17,10 +17,12 @@ public class Player extends Person {
         return "Player{" +
                 "goalCount=" + goalCount +
                 ", isActive=" + isActive +
-                ", playerType=" + playerType +
+                ", playerRole=" + playerRole +
                 ", name='" + name + '\'' +
                 '}';
     }
+
+    public void Score() { this.goalCount++; }
 
     public int getGoalCount() {
         return goalCount;
@@ -38,11 +40,11 @@ public class Player extends Person {
         isActive = active;
     }
 
-    public PlayerType getPlayerType() {
-        return playerType;
+    public PlayerRole getPlayerRole() {
+        return playerRole;
     }
 
-    public void setPlayerType(PlayerType playerType) {
-        this.playerType = playerType;
+    public void setPlayerRole(PlayerRole playerRole) {
+        this.playerRole = playerRole;
     }
 }

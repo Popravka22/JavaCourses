@@ -13,14 +13,16 @@ public class Team {
         this.teamName = teamName;
     }
 
-    public void addPlayer(Player player){
+    public void addPlayers(Player player){
         players.add(player);
     }
+
+    public void removePlayer(int playerNumber) { players.remove(playerNumber); }
 
 
     @Override
     public String toString() {
-        return "Team{" +
+        return "FootballTeam{" +
                 "teamName='" + teamName + '\'' +
                 ", coach=" + coach +
                 ", players=" + players +

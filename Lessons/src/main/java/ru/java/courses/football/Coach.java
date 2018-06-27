@@ -3,9 +3,9 @@ package ru.java.courses.football;
 public class Coach extends Person {
     private int experience;
 
-    public Coach(String name, int experience) {
+    public Coach(String name) {
         this.name = name;
-        this.experience = experience;
+        this.experience = 0;
     }
 
     @Override

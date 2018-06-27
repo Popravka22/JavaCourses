@@ -23,12 +23,12 @@ public class Lesson5to8_OOP {
 
     Некоторые названия классов полей и методов:
 
-    Класс: Team
+    Класс: FootballTeam
     Поля: players, name, coach
     Методы: addPlayers, getPlayersCount, getScore
 
     Класс: Player
-    Поля: name, goals, role
+        Поля: name, goals, role
     Методы: score
 
     Класс: PlayerRole
