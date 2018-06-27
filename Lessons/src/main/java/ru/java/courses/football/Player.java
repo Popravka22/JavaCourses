@@ -1,4 +1,4 @@
-package ru.reksoft.football;
+package ru.java.courses.football;
 
 public class Player extends Person {
     private int goalCount;

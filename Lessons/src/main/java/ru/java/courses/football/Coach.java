@@ -1,4 +1,4 @@
-package ru.reksoft.football;
+package ru.java.courses.football;
 
 public class Coach extends Person {
     private int experience;
